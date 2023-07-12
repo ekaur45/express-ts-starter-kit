@@ -1,5 +1,5 @@
 {
-  "ignored_files": ["node_modules/**","build","*.ts","**/*.ts","tsconfig.json",".env"],
+  "ignored_files": ["node_modules/**","build","*.ts","**/*.ts","tsconfig.json",".env",".git",".github"],
   "compiled_files": [],
   "use_ts_exclude": true,
   "rootDir":"./"
