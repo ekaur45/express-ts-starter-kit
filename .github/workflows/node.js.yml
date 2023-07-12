@@ -23,7 +23,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: [12.x,14.x, 16.x, 18.x]
+          node-version: [12.x, 14.x, 16.x, 18.x]
 
       # The third step transfers the code to the remote server using the Secure Copy (SCP) protocol.
       # The source directory is set to .,!./uploads, which excludes the uploads directory from being transferred.
