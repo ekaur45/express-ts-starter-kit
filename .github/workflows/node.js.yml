@@ -77,8 +77,8 @@ jobs:
           key: ${{ secrets.PRIVATE_KEY }}
           script: |
             cd ${{ env.RELEASE_PATH }}
-            yarn install
-            yarn run build
+            npm install
+            npm run build
 
       # The seventh step starts it with PM2.
       # PM2 is a process manager for Node.js applications that helps to ensure that the application runs continuously
