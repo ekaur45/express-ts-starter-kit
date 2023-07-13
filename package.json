@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only index.ts",
     "start": "npm run dev",
-    "start:prod":"node index.js",
+    "start:prod": "node index.js",
     "build": "tsc & tscp",
     "test": "jest",
     "test:watch": "jest --watch"

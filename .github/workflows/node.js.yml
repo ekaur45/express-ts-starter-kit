@@ -41,18 +41,18 @@ jobs:
       # The fourth step creates shared folders for the uploads directory and the node_modules directory and creates symbolic links
       # to these folders in the current release directory. This helps to ensure that the uploads and node_modules directories
       # persist across releases and are not overwritten.
-      - name: Create shared folders
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.PRIVATE_KEY }}
-          script: |
-            cd ${{ env.RELEASE_PATH }}
-            mkdir -p shared/uploads
-            mkdir -p shared/node_modules
-            ln -sfn ${{ env.RELEASE_PATH }}/shared/uploads ${{ env.RELEASE_PATH }}/build/uploads
-            ln -sfn ${{ env.RELEASE_PATH }}/shared/node_modules ${{ env.RELEASE_PATH }}/build/node_modules
+      # - name: Create shared folders
+      #   uses: appleboy/ssh-action@master
+      #   with:
+      #     host: ${{ secrets.HOST }}
+      #     username: ${{ secrets.USERNAME }}
+      #     key: ${{ secrets.PRIVATE_KEY }}
+      #     script: |
+      #       cd ${{ env.RELEASE_PATH }}
+      #       mkdir -p shared/uploads
+      #       mkdir -p shared/node_modules
+      #       ln -sfn ${{ env.RELEASE_PATH }}/shared/uploads ${{ env.RELEASE_PATH }}/build/uploads
+      #       ln -sfn ${{ env.RELEASE_PATH }}/shared/node_modules ${{ env.RELEASE_PATH }}/build/node_modules
 
       # The fifth step copies configuration files to the remote server, including the .env file and an NGINX configuration file.
       # The NGINX configuration file is used to proxy requests to the Node.js backend application.

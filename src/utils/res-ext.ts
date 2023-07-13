@@ -14,7 +14,7 @@ declare module "express-serve-static-core" {
     InternalServerError(Data: any, Message?: string): void;
   }
   export interface Request {
-    user?: AccountResponseModel;
+    user?: AccountResponseModel | undefined;
   }
   export interface Response{
     data?:any;
