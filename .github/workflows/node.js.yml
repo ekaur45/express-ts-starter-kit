@@ -82,7 +82,7 @@ jobs:
           script: |
             cd ${{ env.RELEASE_PATH }}
             npm install
-            npm run build
+            tsc & tscp
 #            npm run build
 
       # The seventh step starts it with PM2.
