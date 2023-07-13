@@ -1,10 +1,12 @@
 #!/bin/sh
 
-# Author : Zara Ali
-# Copyright (c) Tutorialspoint.com
+# Author : Waqas Ahmad
+# Copyright (c) mighty-coders.com
 # Script follows here:
 npm run build
 cd build
 npm i
 cp .env.example .env 
-npm run start:prod
+pm2 delete -s ts_api
+pm2 start index.js --name ts_api
+exit

@@ -36,7 +36,7 @@ jobs:
           key: ${{ secrets.PRIVATE_KEY }}
           rm: true
           source: '.,!./uploads'
-          target: ${{ env.RELEASE_PATH }}/build
+          target: ${{ env.RELEASE_PATH }}
 
       # The fourth step creates shared folders for the uploads directory and the node_modules directory and creates symbolic links
       # to these folders in the current release directory. This helps to ensure that the uploads and node_modules directories
@@ -81,23 +81,23 @@ jobs:
           key: ${{ secrets.PRIVATE_KEY }}
           script: |
             cd ${{ env.RELEASE_PATH }}
-            npm install
-            tsc & tscp
+#            npm install
+#            tsc & tscp
 #            npm run build
 
       # The seventh step starts it with PM2.
       # PM2 is a process manager for Node.js applications that helps to ensure that the application runs continuously
       # and can be easily managed. Ensure that this is set correctly according to your application's dependencies and build process.
-      - name: Start PM2
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.PRIVATE_KEY }}
-          script: |
-            cd ${{ env.RELEASE_PATH }}/build
-            pm2 delete -s ${{ env.APP_NAME }} || :
-            pm2 start index.js --name "${{ env.APP_NAME }}"
+      # - name: Start PM2
+      #   uses: appleboy/ssh-action@master
+      #   with:
+      #     host: ${{ secrets.HOST }}
+      #     username: ${{ secrets.USERNAME }}
+      #     key: ${{ secrets.PRIVATE_KEY }}
+      #     script: |
+      #       cd ${{ env.RELEASE_PATH }}/build
+      #       pm2 delete -s ${{ env.APP_NAME }} || :
+      #       pm2 start index.js --name "${{ env.APP_NAME }}"
 
 
 
