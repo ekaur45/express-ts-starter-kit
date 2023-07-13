@@ -3,6 +3,7 @@
 # Author : Waqas Ahmad
 # Copyright (c) mighty-coders.com
 # Script follows here:
+npm i
 npm run build
 cd build
 npm i
