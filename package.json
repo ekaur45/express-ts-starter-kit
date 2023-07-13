@@ -7,7 +7,7 @@
     "dev": "ts-node-dev --respawn --transpile-only index.ts",
     "start": "npm run dev",
     "start:prod":"node index.js",
-    "build": "rm -r build/ & tsc & tscp",
+    "build": "tsc & tscp",
     "test": "jest",
     "test:watch": "jest --watch"
   },
