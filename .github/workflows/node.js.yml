@@ -70,16 +70,20 @@ jobs:
 
       # The sixth step installs dependencies, builds the application.
       - name: Install dependencies
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.PRIVATE_KEY }}
-          script: |
-            cd ${{ env.RELEASE_PATH }}
-            npm install
-            bash build.sh
-#            npm run build
+        uses: alexthemaster/action-build-typescript@v1.3.1        
+
+
+#       - name: Install dependencies
+#         uses: appleboy/ssh-action@master
+#         with:
+#           host: ${{ secrets.HOST }}
+#           username: ${{ secrets.USERNAME }}
+#           key: ${{ secrets.PRIVATE_KEY }}
+#           script: |
+#             cd ${{ env.RELEASE_PATH }}
+#             npm install
+#             npm run build
+# #            npm run build
 
       # The seventh step starts it with PM2.
       # PM2 is a process manager for Node.js applications that helps to ensure that the application runs continuously
