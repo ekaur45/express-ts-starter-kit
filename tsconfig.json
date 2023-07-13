@@ -68,6 +68,8 @@
       "bin",
       ".vscode",
       "typings/browser.d.ts",
-      "typings/browser/**"
+      "typings/browser/**",
+      ".git",
+      ".github"
     ]
   }
