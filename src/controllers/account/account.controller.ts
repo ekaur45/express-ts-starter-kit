@@ -22,7 +22,7 @@ class AccountController{
         //await this.accountService.getUser();
     }
     authenticated = async (req:Request,res:Response,next:NextFunction) => {
-        res.Ok(req.user);
+        await this.accountService.getUser();
     }
 }
 export default AccountController

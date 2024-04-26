@@ -8,7 +8,7 @@
     "start": "npm run dev",
     "start:prod": "node index.js",
     "build": "tsc & tscp",
-    "test": "jest",
+    "test": "jest --coverage",
     "test:watch": "jest --watch"
   },
   "author": "",

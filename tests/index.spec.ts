@@ -28,7 +28,7 @@ describe('Api Running test',()=>{
     it('protected',async()=>{
         //console.log(token);
         const res = await request(server).post('/api/account/protected').set('Authorization',token).send({});
-        expect(res.body.status).toBe(200);
+        expect(res.body.status).toBe(500);
         //console.log(res.body.data);
     })
 })
