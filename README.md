@@ -104,11 +104,11 @@ Please adhere to this project's `code of conduct`.
 
 
 ## 🚀 About Me
-🚀 Welcome to my GitHub journey! I'm a dynamic software engineer at Wiseman Innovations, with a stellar track record of over 3 years in the industry. My forte? Seamlessly integrating third-party APIs and FHIR clients like Athena and Epic into cutting-edge solutions. Think Node.js, Express.js, MySQL, Angular, and more—I've got it covered!\
+🚀 Welcome to my GitHub journey! I'm a dynamic software engineer at Wiseman Innovations, with a stellar track record of over 3 years in the industry. My forte? Seamlessly integrating third-party APIs and FHIR clients like Athena and Epic into cutting-edge solutions. Think Node.js, Express.js, MySQL, Angular, and more—I've got it covered!
 
-💡 At Wiseman, I specialize in crafting bespoke systems that effortlessly weave together third-party APIs and FHIR clients. Picture this: healthcare data flowing seamlessly between systems, thanks to my expertise in Node.js, Express.js, MySQL, and Angular. My projects? They're not just solutions—they're game-changers!\
+💡 At Wiseman, I specialize in crafting bespoke systems that effortlessly weave together third-party APIs and FHIR clients. Picture this: healthcare data flowing seamlessly between systems, thanks to my expertise in Node.js, Express.js, MySQL, and Angular. My projects? They're not just solutions—they're game-changers!
 
-🌟 Passion drives me—I live and breathe technology, always on the lookout for the latest trends and innovations. As a perpetual learner, I'm committed to staying ahead of the curve, ensuring my clients get nothing but the best.\
+🌟 Passion drives me—I live and breathe technology, always on the lookout for the latest trends and innovations. As a perpetual learner, I'm committed to staying ahead of the curve, ensuring my clients get nothing but the best.
 
 🤝 Collaboration is key, and I thrive in team environments where I can turn ideas into reality alongside like-minded professionals. Whether it's exploring exciting collaborations or sharing insights, I'm here to connect with fellow software enthusiasts.
 

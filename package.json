@@ -1,7 +1,8 @@
 {
   "name": "express-ts-starter-kit",
   "version": "1.0.0",
-  "description": "",
+  "description": "REST API starter boilerplate build with typescript.",
+  "keywords": ["REST","API","REST API","express","express.js","express.ts","typescript","javascript","express js with typescript","express with typescript boilerplate","boilerplate"],
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only index.ts",
