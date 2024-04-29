@@ -17,12 +17,12 @@ class AccountController{
         user.type = UserTypes.Admin;
         user.token = getToken({...user});
         res.Ok(user);
-        //res.InternalServerError("");
-        //throw new Error("asdfhjdkashjfads");
-        //await this.accountService.getUser();
     }
     authenticated = async (req:Request,res:Response,next:NextFunction) => {
         await this.accountService.getUser();
+    }
+    notFoundUser = async (req:Request,res:Response,next:NextFunction) => {
+        return res.NotFound({Message:"Bad request"},"Not found");
     }
 }
 export default AccountController
